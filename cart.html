@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body  >
+    <nav  class="navbar fixed-top   navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div  class="div9">
+              
+                <a    class=" fw-bold text-light fs-2" href="index.html">OneTech </a>
+               
+            </div>
+            <button class="navbar-toggler text-light border   " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+                <div class="navbar-toggler-icon d-flex w-25   "> 
+                    <span class="pe-3 pt-1">Menu</span> 
+                    <i class=" text-light  fas fa-bars bar-ico fs-2"></i>
+                </div>
+              </button>
+          <div class=" collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav  fog  ">
+                <li class="div11 nav-item">
+                    <form  class="div1 position-relative ">
+                        <input class="form-control" type="text" placeholder="Search For Products..." required>
+                        <div class=" div2 dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li class="div3 "><a class="dropdown-item" href="#">All Categories</a></li>
+                              <li class="div3" ><a class="dropdown-item" href="#">Computers</a></li>
+                              <li class="div3"><a class="dropdown-item" href="#">Laptops</a></li>
+                              <li class="div3"><a class="dropdown-item" href="#">Cameras</a></li>
+                              <li class="div3"><a class="dropdown-item" href="#">Hardware</a></li>
+                              <li class="div4"><a class="dropdown-item" href="#">Smartphones</a></li>
+                            </ul>
+                          </div>
+                        <button class="div5" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </li>
+
+                <li class="nav-item">
+                    <a  class="nav-link " aria-current="page" href="#Home">Home</a>
+                </li>
+                <li class="nav-item position-relative">
+                    <a  class="nav-link" href="#Super Deals">Super Deals</a>
+                </li>
+                <li class="nav-item position-relative">
+                    <a  class="nav-link" href="#New_Arrival">New Arrival</a>
+                </li>
+                <li class="nav-item position-relative">
+                    <a  class="nav-link" href="#Trends"> Trends</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="cart.html">cart</a></li>
+                    <li><a class="dropdown-item" href="wishlist.html">wishlist</a></li>
+                   
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">
+                    Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br><br><br><br><br>
+
+      <main >
+<section class="container" >
+   <div class="row  ">
+    <div >
+        <h3 class=" fw-bold pb-3  mb-5 border-1 border-bottom ">Cart List</h3>
+    </div>
+    <table  class="table  ">
+        <thead >
+          <tr>
+              
+            <th>Item Details</th>
+           
+            <th> Price</th>
+           
+            <th>Count</th>
+           
+            <th>Total Price</th>
+          </tr>
+    
+        </thead>
+         <tbody id="tbody" >
+<!--             
+          <tr><td>Item Details</td>
+          
+          <td>Price</td>
+         
+          <td>Count</td>
+         
+          <td>Total Price</td>
+        </tr> -->
+    
+        </tbody>  
+    </table><br></br><br><br>
+    <div class="text-end">
+        <button type="button" class="btn btn-outline-success  d-none" >
+          Pay Now
+        </button>
+      </div>
+    <div class="imgcart d-none">
+        <img src="img/empty-cart.svg"  alt="">
+    </div>
+   </div>
+</section>
+      </main>
+
+
+
+
+<section  class=" div56 mb-5   py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="div59 d-flex justify-content-center">
+                        <div class="div60 me-4">
+                            <img src="img/telegram.webp" alt="">
+                        </div>
+                        <div class="div61">
+                            <h3 class="h5 fw-bold">Sign up for Newsletter</h3>
+                            <p class="mb-0">...and receive %20 coupon for first <br> shopping.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <form >
+                    <input id="userSubEmail" class="div57" type="email" name="userSubEmail"  placeholder="Enter Your Email Adress">
+                    <p class=" mt-2 d-none text-danger" id="userSubEmailReq">Email is invalid.</p>
+                    <button id="btnSubEmail" class="div58 text-white btn-info" type="submit" >Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer id="Contact"   class="pt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <div>
+                    <div class=" div67 mb-4">
+                        <a href="#">OneTech</a>
+                    </div>
+                    <div class=" mb-2">Got Question? Call Us 24/7</div>
+                    <div class="div62 mb-2">01153048599</div>
+                    <div class="div63 mb-2">Mohamed Ahmed Khalil</div>
+                    <div class="div64 mb-3">17 Princess Road, London Grester London NW18JR, UK</div>
+                    <div class="div65 d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="div66">
+                    <h3 class="h6 mb-3">Find it Fast</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Computers & Laptops</a></li>
+                        <li><a href="#">Cameras & Photos</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Smartphones & Tablets</a></li>
+                        <li><a href="#">TV & Audio</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Car Electronics</a></li>
+                        <li><a href="#">Video Games & Consoles</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="div66">
+                    <h3 class="h6 mb-3">Customer Care</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">Customer Services</a></li>
+                        <li><a href="#">Returns / Exchange</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Product Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<section>
+    <div class="div68 py-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <p class="mb-0">Copyright &copy;2021 All rights reserved | This template is made by <a class="div69" href="#">Triple-O</a> </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="pay ">
+                        <ul class="list-unstyled d-flex justify-content-md-end mb-0 ">
+                            <li><a href="#" class="me-3"><img src="img/footer/footer1.webp" alt=""></a></li>
+                            <li><a href="#" class="me-3"><img src="img/footer/footer2.webp" alt=""></a></li>
+                            <li><a href="#" class="me-3"><img src="img/footer/footer3.webp" alt=""></a></li>
+                            <li><a href="#" ><img src="img/footer/footer4.webp" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script  src="js/cart.js"></script>
+</body>
+</html>
